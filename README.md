@@ -14,4 +14,4 @@ This plugin allows you to filter chat messages in Minecraft using customizable r
 
 > [!NOTE]
 > By default there are no expressions, you will need to add your own filters. \
-> An example filter for 2b2t is available [here](https://github.com/TehPicix/rusherhack-chat-filter/wiki/Example-Filter).
+> An example filter for 2b2t is available [here](https://github.com/TehPicix/rusherhack-chat-filter/wiki).
