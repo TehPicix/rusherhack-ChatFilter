@@ -9,13 +9,13 @@ import org.rusherhack.client.api.plugin.Plugin;
 public class Main extends Plugin {
 
 	public static final File CONFIG_DIR = RusherHackAPI.getConfigPath().resolve("chatfilter").toFile();
-	
+
 	@Override
 	public void onLoad() {
-		
+
 		final Module module = new Module();
 		RusherHackAPI.getModuleManager().registerFeature(module);
-		
+
 		if (!CONFIG_DIR.exists()) {
 			CONFIG_DIR.mkdirs();
 			try {
@@ -24,11 +24,9 @@ public class Main extends Plugin {
 				e.printStackTrace();
 			}
 		}
-
 	}
-	
+
 	@Override
 	public void onUnload() {
 	}
-	
 }
