@@ -29,6 +29,9 @@ jobs:
           java-version: "21"
           distribution: "microsoft"
 
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew
+
       # Get version from gradle.properties setting it as an environment variable
       - name: Get Version
         id: get_version
@@ -37,7 +40,7 @@ jobs:
           echo "version=$version" >> $GITHUB_ENV
 
       - name: Build with Gradle Wrapper
-        run: ./gradlew build
+        run: gradle build
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
