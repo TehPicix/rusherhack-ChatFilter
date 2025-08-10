@@ -1,13 +1,16 @@
 {
-  "Plugin-Class": "org.example.ExamplePlugin",
+  "Plugin-Class": "me.tehpicix.rusherhack.chatfilter.Main",
   "Name": "${project.plugin_name}",
   "Version": "${project.plugin_version}",
-  "Description": "Example rusherhack plugin",
-  "URL": "https://github.com/RusherDevelopment/example-plugin",
+  "Description": "Filter your game chat with a customizable regular expression",
+  "URL": "https://github.com/TehPicix/rusherhack-chat-filter",
   "Authors": [
-    "John200410"
+    "TehPicix"
   ],
   "Minecraft-Versions": [
     "${project.minecraft_version}"
+  ],
+  "Mixin-Configs": [
+    "mixins.chatfilter.json"
   ]
 }
