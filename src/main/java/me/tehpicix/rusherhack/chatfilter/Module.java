@@ -6,7 +6,7 @@ import org.rusherhack.client.api.feature.module.ToggleableModule;
 public class Module extends ToggleableModule {
 	
 	public Module() {
-		super("Chat Filter", "Filter your game chat with a customizable regular expression", ModuleCategory.CLIENT);
+		super("ChatFilter", "Filter your game chat with a customizable regular expression", ModuleCategory.CLIENT);
 	}
 	
 	@Override
