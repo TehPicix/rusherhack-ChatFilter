@@ -1,11 +1,25 @@
-# RusherHack Chat Filter
-This plugin allows you to filter chat messages in Minecraft using customizable regular expressions. It reads expressions from a file and applies them to incoming chat messages, blocking those that match.
+# Chat Filter
+[![GitHub Release](https://img.shields.io/github/v/release/TehPicix/rusherhack-ChatFilter?style=for-the-badge)
+![GitHub Downloads](https://img.shields.io/github/downloads/TehPicix/rusherhack-ChatFilter/total?style=for-the-badge&color=green&link=https%3A%2F%2Fgithub.com%2FTehPicix%2Frusherhack-ChatFilter%2Freleases%2Flatest)](https://github.com/TehPicix/rusherhack-ChatFilter/releases/latest)
+
+A rusherhack plugin that allows you to filter chat messages in Minecraft using customizable regular expressions. It reads expressions from a file and applies them to incoming chat messages, blocking those that match.
+
+<!-- summary dfetails -->
+<details>
+  <summary>Screenshots</summary>
 
 ### Before
 ![](.github/assets/before.png)
 
 ### After
 ![](.github/assets/after.png)
+</details>
+
+## Features
+- ### Customizable Filters
+  - Add your own regex expressions to filter out unwanted chat messages.
+  - Supports complex patterns for advanced filtering.
+  - Supports multi-line regex patterns.
 
 # Installation
 1. Place the `rusherhack-chatfilter-x.x.x.jar` file into your RusherHack plugins directory.

@@ -117,10 +117,6 @@ loom {
 	runConfigs.configureEach {
 		ideConfigGenerated = false
 	}
-	
-	mixin {
-		useLegacyMixinAp = false
-	}
 }
 
 def targetJavaVersion = project.java_version
