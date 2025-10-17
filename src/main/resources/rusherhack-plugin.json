@@ -1,5 +1,5 @@
 {
-  "Plugin-Class": "me.tehpicix.rusherhack.chatfilter.Main",
+  "Plugin-Class": "${project.maven_group}.Main",
   "Name": "${project.plugin_name}",
   "Version": "${project.plugin_version}",
   "Description": "Filter your game chat with a customizable regular expression",
