@@ -3,7 +3,7 @@
   "Name": "${project.plugin_name}",
   "Version": "${project.plugin_version}",
   "Description": "Filter your game chat with a customizable regular expression",
-  "URL": "https://github.com/TehPicix/rusherhack-chat-filter",
+  "URL": "https://github.com/TehPicix/rusherhack-ChatFilter",
   "Authors": [
     "TehPicix"
   ],

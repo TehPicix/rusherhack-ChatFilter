@@ -103,6 +103,10 @@ loom {
 	runConfigs.configureEach {
 		ideConfigGenerated = false
 	}
+	
+	mixin {
+		useLegacyMixinAp = false
+	}
 }
 
 def targetJavaVersion = project.java_version
@@ -130,22 +134,6 @@ jar {
 	}
 }
 
-
-def libsDir = layout.buildDirectory.dir("libs")
-
-tasks.register("devJar", Copy) {
-    group = "build"
-    description = "Create an additional jar named <archivesBaseName>-dev.jar with identical contents to remapJar"
-    dependsOn tasks.named("remapJar")
-    from(tasks.named("remapJar").flatMap { it.archiveFile })
-    into(libsDir)
-    rename { _ -> "${project.archivesBaseName}-${project.plugin_version}.jar" }
-}
-
+//update access widener during intellij sync
 this.tasks.ideaSyncTask.dependsOn("updateAccessWidener")
 this.tasks.configureLaunch.dependsOn("updateAccessWidener")
-
-this.tasks.build.dependsOn("devJar")
-// tasks.named("build") {
-//     dependsOn("devJar")
-// }
